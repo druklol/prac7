@@ -3,5 +3,6 @@ fun main() {
     val cabelPayment=PaymentCable("железо",7,12.4,true)
     println(cabel.diametr)
     println(cabel.getQ())
-    println(cabelPayment.getQp())
+    println(cabelPayment.getQ())
+    cabel.printInfo()
 }

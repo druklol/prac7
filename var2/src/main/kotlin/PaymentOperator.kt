@@ -1,7 +1,7 @@
 class PaymentOperator( operatorName: String, priceOneMinute:Int, coverageArea:Double,var P:Boolean):Operator(operatorName, priceOneMinute, coverageArea) {
 
-    fun calculationQp():Double{
-        val q:Double=calculation(priceOneMinute,coverageArea)
+    override fun calculation(): Double {
+        val q:Double=100*coverageArea/priceOneMinute
         if(P) {
             val Qp: Double = 0.7 *q
             return Qp

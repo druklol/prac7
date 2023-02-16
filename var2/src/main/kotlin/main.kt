@@ -4,7 +4,7 @@ fun main(){
     val payment = PaymentOperator("MTS",7,100.0,true)
     println(operator.operatorName)
     println(operator.priceOneMinute)
-    println(operator.calculation(7,100.0))
-    println(payment.calculationQp())
+    println(operator.calculation())
+    println(payment.calculation())
 
 }
